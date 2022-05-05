@@ -10,7 +10,7 @@ public class AverageMethod {
         int index = (int) AverageMethod.scanner();
         array = arrayCreator(index);
         System.out.println("Your array is: "+array);
-        System.out.println("The sum of your array is "+sum(array)+" and its average is "+average(sum(array), index));
+        System.out.println("The sum of your array is "+sum(array)+" and its average is "+average(sum(array), index)+".");
     }
     public static double scanner() {
         Scanner scan = new Scanner(System.in);
