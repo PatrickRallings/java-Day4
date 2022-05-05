@@ -1,3 +1,5 @@
+package Loops;
+
 import java.util.Scanner;
 public class TakeABreak {
     public static void main(String[] args) {
