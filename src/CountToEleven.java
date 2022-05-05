@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class CountToEleven {
     public static void main(String[] args) {
         System.out.println("Enter a number less than 11");
-        int inputNum = CountToEleven.scanner();
+        double inputNum = CountToEleven.scanner();
         CountToEleven.loop(inputNum);
     }
-    public static int scanner() {
+    public static double scanner() {
         Scanner scan = new Scanner(System.in);
-        return scan.nextInt();
+        return scan.nextDouble();
     }
-    public static void loop(int inputNum) {
-        for (int i = inputNum; i <= 11; i++) {
+    public static void loop(double inputNum) {
+        for (double i = inputNum; i <= 11; i++) {
             System.out.println(i);
         }
     }

@@ -4,20 +4,19 @@ public class PositiveNumbers {
     public static void main(String[] args) {
         while (true) {
             System.out.println("Enter a number:");
-            int inputNum = PositiveNumbers.scanner();
-            if (Integer.valueOf(inputNum) == 0) {
+            double inputNum = PositiveNumbers.scanner();
+            if (inputNum == 0) {
                 break;
-            } else if (Integer.valueOf(inputNum) > 0) {
+            } else if (inputNum > 0) {
                 System.out.println("Number is "+inputNum);
                 continue;
             } else {
                 System.out.println("Must be a positive number.");
             }
         }
-
     }
-    public static int scanner() {
+    public static double scanner() {
         Scanner scan = new Scanner(System.in);
-        return scan.nextInt();
+        return scan.nextDouble();
     }
 }
